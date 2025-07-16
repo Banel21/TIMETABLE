@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Study Timetable</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4a90e2">
+</head>
+<body>
+  <div class="header-container">
+    <header>
+      <h1><i class="fas fa-laptop-code"></i> Full Stack Study Timetable</h1>
+      <p>9:00 - 21:00 | 3 Hours Each: Java & JavaScript | With Break Reminders</p>
+    </header>
+  </div>
+
+  <div class="container">
+    <button id="enableNotifications" class="notification-btn">
+      <i class="fas fa-bell"></i> Enable Study Notifications
+    </button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+          <th>Focus Area</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="study-block" id="block1">
+          <td data-label="Time">09:00 - 10:30</td>
+          <td data-label="Activity"><i class="fab fa-java"></i> Java Core Concepts</td>
+          <td data-label="Focus Area">OOP, Data Structures</td>
+        </tr>
+        
+        <tr class="study-block" id="block2">
+          <td data-label="Time">10:30 - 12:00</td>
+          <td data-label="Activity"><i class="fab fa-java"></i> Java Frameworks</td>
+          <td data-label="Focus Area">Spring Boot, Hibernate</td>
+        </tr>
+        
+        <tr class="break-row" id="break1">
+          <td data-label="Time">12:00 - 12:30</td>
+          <td colspan="2"><i class="fas fa-mug-hot"></i> Morning Break</td>
+        </tr>
+        
+        <tr class="study-block" id="block3">
+          <td data-label="Time">12:30 - 14:00</td>
+          <td data-label="Activity"><i class="fab fa-js"></i> JavaScript Fundamentals</td>
+          <td data-label="Focus Area">ES6+, DOM Manipulation</td>
+        </tr>
+        
+        <tr class="study-block" id="block4">
+          <td data-label="Time">14:00 - 15:30</td>
+          <td data-label="Activity"><i class="fab fa-js"></i> Advanced JS</td>
+          <td data-label="Focus Area">Async/Await, APIs</td>
+        </tr>
+        
+        <tr class="break-row" id="break2">
+          <td data-label="Time">15:30 - 16:00</td>
+          <td colspan="2"><i class="fas fa-utensils"></i> Lunch Break</td>
+        </tr>
+        
+        <tr class="study-block" id="block5">
+          <td data-label="Time">16:00 - 17:30</td>
+          <td data-label="Activity"><i class="fas fa-database"></i> SQL Server + <i class="fas fa-leaf"></i> MongoDB</td>
+          <td data-label="Focus Area">Query Optimization, Indexing</td>
+        </tr>
+        
+        <tr class="study-block" id="block6">
+          <td data-label="Time">17:30 - 19:00</td>
+          <td data-label="Activity"><i class="fas fa-book-open"></i> Java Book + <i class="fas fa-book"></i> English Reading</td>
+          <td data-label="Focus Area">Effective Java + Technical English</td>
+        </tr>
+        
+        <tr class="break-row" id="break3">
+          <td data-label="Time">19:00 - 19:30</td>
+          <td colspan="2"><i class="fas fa-walking"></i> Evening Break</td>
+        </tr>
+        
+        <tr class="study-block" id="block7">
+          <td data-label="Time">19:30 - 21:00</td>
+          <td data-label="Activity"><i class="fas fa-laptop-code"></i> Full Stack Project</td>
+          <td data-label="Focus Area">Apply Daily Learning</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="weekly-focus">
+      <h3><i class="fas fa-chart-pie"></i> Weekly Focus Areas</h3>
+      <ul class="focus-items">
+        <li class="focus-item">
+          <strong><i class="fab fa-java"></i> Java (3h daily):</strong> Core, Spring Boot, Algorithms
+        </li>
+        <li class="focus-item">
+          <strong><i class="fab fa-js"></i> JavaScript (3h daily):</strong> ES6+, DOM, Node.js
+        </li>
+        <li class="focus-item">
+          <strong><i class="fab fa-html5"></i> Frontend:</strong> HTML5, CSS3, UI/UX Design
+        </li>
+        <li class="focus-item">
+          <strong><i class="fas fa-database"></i> Databases:</strong> SQL Server & MongoDB
+        </li>
+        <li class="focus-item">
+          <strong><i class="fab fa-node-js"></i> Backend:</strong> Node.js, Express, REST APIs
+        </li>
+        <li class="focus-item">
+          <strong><i class="fas fa-tools"></i> Tools:</strong> Git, System Design, Debugging
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
